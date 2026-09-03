@@ -15,7 +15,7 @@ void balanceUpdate (account& accountData, float newBalance) {                   
 int main (){
     
     account enterAccount;                                   //"местный" аккаунт по "шаблну" Struct т.к. мы должны куда то записать данные и они точно НЕ должны идти в сам Struct
-    float changeBalance = 0;
+    float changeBalance = 0;                                // изменение баланса
 
     std:: cout << "Введите номер счета: " << std:: endl;
     std:: cin >> enterAccount.accID;
