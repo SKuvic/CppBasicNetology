@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 enum monthList {            //Перечисление! месяцев, а не "список". enum - кастом. тип данных
     Январь      = 1,
     Февраль     = 2,
@@ -25,7 +24,7 @@ int main (){
     std:: cout << "Введите номер месяца: ";
     std:: cin >> monthEnter;
 
-    monthList indicateMonth = static_cast<monthList>(monthEnter);      //Преобразование листа
+    monthList indicateMonth = static_cast<monthList>(monthEnter);      //Преобразование monthEnter в тип данных <monthList>
     
         switch (monthEnter) {
 
