@@ -3,70 +3,97 @@
 
 class Calculator
 {
-public:                 // Модификатор доступа
-    int num1 = 0;       // Поле класса 1
-    int num2 = 0;       // Поле класса 2
+private:                 // Модификатор доступа
+    double num1 = 0;       // Поле класса 1
+    double num2 = 0;       // Поле класса 2
 
+public:
     //Сложение
-    void add ()    //Метод. Я решил оставить void т.к. хочу чтобы возвращалось именно число
+    double add ()    //Метод.
     {
-        std::cout << "Num1 + Num2 = " << num1 + num2 << std::endl;
+        return num1 + num2;
     }
 
     //Вычитание
-    void sub () { 
-        std::cout << "Num1 - Num2 = " << num1 - num2 << std::endl;
+    double subtract_2_1() { 
+        return num1 - num2;
     }
 
     //Вычитание обратное
-    void revsub () { 
-        std::cout << "Num2 - Num1 = " << num2 - num1 << std::endl;
+    double subtract_1_2() { 
+        return num2 - num1;
     }
 
     //Умножение
-    void mul () { 
-        std::cout << "Num1 * Num2 = " << num1 * num2 << std::endl;
+    double multiply() { 
+       return num1 * num2;
     }
 
     //Деление
-    void div () { 
-        double result = static_cast<double>(num1) / num2;
-        std::cout << "Num1 / Num2 = " << result << std::endl;
+    double divide_1_2() { 
+        return num1 / num2;
     }
 
     //Деление обратное
-    void revdiv () { 
-        double result = static_cast<double>(num2) / num1;
-        std::cout << "Num2 / Num1 = " << result << std::endl;
+    double divide_2_1() {
+       return num2 / num1;
     }
+
+    //
+    bool set_num1 (int num1) {
+        if (num1 == 0)
+            return false;
+
+            this -> num1 = num1;
+            return true;
+    }
+
+    //
+    bool set_num2 (int num2) {
+        if (num2 == 0)
+            return false;
+        
+            this -> num2 = num2;
+            return true;
+    }
+
+
+
 };
 
 int main (int argc, char** argv){
-Calculator calcmain;
 
-    std::cout << "Введите Num1: ";
-    std::cin >> calcmain.num1;
+    Calculator calcmain;
+    double tmp_input = 0;
+
+    //BLOCK I. проверка нулей на ввод
+      
+    std::cout << "Введите Num1: ";                           //num1
+    std::cin >> tmp_input;
+
+    while (!calcmain.set_num1(tmp_input)){
+        std::cout << "Неверный ввод!" << std::endl;
+        std::cout << "Введите Num1: ";
+        std::cin >> tmp_input;
+    }
+        
     std::cout << "Введите Num2: ";
-    std::cin >> calcmain.num2;
+    std::cin >> tmp_input;
 
-while (calcmain.num1 == 0) {                        //Проверки на ноль
-    std::cout << "Неверный ввод!" << std::endl;
-    std::cout << "Введите Num1: ";
-    std::cin >> calcmain.num1;
-}
+    while (!calcmain.set_num2(tmp_input)){
+        std::cout << "Неверный ввод!" << std::endl;
+        std::cout << "Введите Num2: ";
+        std::cin >> tmp_input;
+    }    
+    
 
-while (calcmain.num2 == 0) {
-    std::cout << "Неверный ввод!" << std::endl;
-    std::cout << "Введите Num2: ";
-    std::cin >> calcmain.num2;
-}
-
-    calcmain.add();
-    calcmain.sub();
-    calcmain.revsub();
-    calcmain.mul();
-    calcmain.div();
-    calcmain.revdiv();
+    //BLOCK II. Вызовы методов и вывод в терминал
+    std::cout << "num1 + num2 = " << calcmain.add() << std::endl;
+    std::cout << "num1 - num2 = " << calcmain.subtract_2_1() << std::endl;
+    std::cout << "num2 - num1 = " << calcmain.subtract_1_2() << std::endl;
+    std::cout << "num1 * num2 = " << calcmain.multiply() << std::endl;
+    std::cout << "num1 / num2 = " << calcmain.divide_1_2() << std::endl;
+    std::cout << "num2 / num1 = " << calcmain.divide_2_1() << std::endl;
 
     return 0;
 }
