@@ -2,25 +2,31 @@
 #include <string>
 #include <exception> // Нужен для работы с исключениями
 #include <string_view>
-
+#include <stdexcept>
+#include <windows.h>
 
 int function(std::string str, int forbidden_length) {
-    int string_size = str.length(); // Считаем длину стандартным методом
-
-    // Если длина совпала с запретной — триггерим аварийную остановку
-    if (string_size == forbidden_length) {
-        throw "Запретная длина!"; // Бросаем указатель на строку (const char*)
+    int string_size = 0; // 
+    for (char c: str) {                 //Из-за того что криллица весит по 2 байта на 1 символ пришлось сделать это
+        if ((c & 0xc0) != 0x80) {
+            string_size++;
+        }
     }
-    
-    return string_size; 
+    if (string_size == forbidden_length) {
+        throw std::out_of_range ("OUT OF RANGE ERROR. "); // Бросаем указатель на строку (const char*)
+    }
+
+    return string_size;
 }
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+    
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
 
     int forbidden_length = 0;
     std::string str = "";
-    
+
     //Работа с пользователем
     std::cout << "Введите запретную длину: ";
     std::cin >> forbidden_length;
@@ -36,10 +42,10 @@ int main() {
             // Если throw НЕ отработал то
             std::cout << "Длина слова \"" << str << "\" равна " << length << std::endl;
         }
-        catch (const char* error_message) {
+        catch (const std::exception& err) {
             //Если throw сработал то сразу перенос сюда идет и не проходим строку 37
-            std::cout << "Вы ввели слово запретной длины! До свидания" << std::endl;
-            
+            std::cerr << err.what () << "Вы ввели слово запретной длины! До свидания" << std::endl;
+
             break;
         }
     }
