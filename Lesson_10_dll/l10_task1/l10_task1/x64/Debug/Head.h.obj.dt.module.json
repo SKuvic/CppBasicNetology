@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "l10_task1\\x64\\Debug\\Head.obj",
+            "outputs": [
+                "l10_task1\\x64\\Debug\\Head.h.obj.dt.module.json",
+                "l10_task1\\x64\\Debug\\Head.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

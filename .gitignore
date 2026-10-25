@@ -24,5 +24,8 @@ CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 
+# Скрытая папка настроек и кэша Visual Studio
+.vs/
+
 # Системные файлы
 .DS_Store

@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\quatr\\desktop\\netologiya\\cppbasicnetology\\lesson_10_dll\\l10_task1\\staticlib1\\pch.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\quatr\\desktop\\netologiya\\cppbasicnetology\\lesson_10_dll\\l10_task1\\staticlib1\\pch.h",
+            "c:\\users\\quatr\\desktop\\netologiya\\cppbasicnetology\\lesson_10_dll\\l10_task1\\staticlib1\\framework.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
