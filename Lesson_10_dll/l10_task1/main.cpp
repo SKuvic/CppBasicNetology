@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
 #include "Greeter.h"
+#include <windows.h>
 
 int main() {
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	std::setlocale(LC_ALL, "Russian");
 
 	Greeter ma_greeter;
 
