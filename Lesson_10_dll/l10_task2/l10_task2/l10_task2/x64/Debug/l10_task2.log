@@ -1,0 +1,15 @@
+﻿  l10_task2.cpp
+C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\Leaver.h(8,14): warning C4251: "Leaver::name": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "Leaver"
+  (компиляция исходного файла "l10_task2.cpp")
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(589,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+  Leaver.cpp
+C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\Leaver.h(8,14): warning C4251: "Leaver::name": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "Leaver"
+  (компиляция исходного файла "Leaver.cpp")
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(589,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+  Создание кода...
+     Создается библиотека C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\x64\Debug\l10_task2.lib и объект C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\x64\Debug\l10_task2.exp
+  l10_task2.vcxproj -> C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\x64\Debug\l10_task2.dll

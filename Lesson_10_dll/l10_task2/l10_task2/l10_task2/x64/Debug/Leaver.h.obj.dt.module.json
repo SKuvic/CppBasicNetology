@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "l10_task2\\x64\\Debug\\Leaver.obj",
+            "outputs": [
+                "l10_task2\\x64\\Debug\\Leaver.h.obj.dt.module.json",
+                "l10_task2\\x64\\Debug\\Leaver.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

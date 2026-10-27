@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../LeaverClient/LeaverClient.vcxproj" Id="2c33a447-0255-4b7c-8035-9404fc144d58" />
+  <Project Path="l10_task2.vcxproj" Id="3fb790d4-0590-4333-86a7-6aef7e981d5f" />
+</Solution>

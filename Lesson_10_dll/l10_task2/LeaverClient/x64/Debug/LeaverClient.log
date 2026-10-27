@@ -1,0 +1,7 @@
+﻿  LeaverClient.cpp
+C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\Leaver.h(8,14): warning C4251: "Leaver::name": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "Leaver"
+  (компиляция исходного файла "LeaverClient.cpp")
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(589,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+  LeaverClient.vcxproj -> C:\Users\quatr\Desktop\NETOLOGIYA\CppBasicNetology\Lesson_10_dll\l10_task2\l10_task2\x64\Debug\LeaverClient.exe
