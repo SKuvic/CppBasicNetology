@@ -15,7 +15,7 @@ int main() {
 	std::cout << "Enter a Name: ";
 	std::cin >> enter_name;
 
-	ma_greeter.set_name(enter_name);
+	std::cout << ma_greeter.greet(enter_name) <<std::endl;
 
-	std::cout << "Greetings, " << ma_greeter.get_name() << "!" << std::endl;
+	return 0;
 }

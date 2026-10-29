@@ -139,7 +139,6 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="l10_task2.cpp" />
     <ClCompile Include="Leaver.cpp" />
   </ItemGroup>
   <ItemGroup>

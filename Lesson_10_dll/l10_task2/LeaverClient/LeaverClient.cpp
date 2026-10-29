@@ -1,19 +1,19 @@
 #include <iostream>
 #include <string>
-#include "Leaver.h"
+#include "../l10_task2/Leaver.h"
 #include <windows.h>
 
 int main() {
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
 
-	std::string name;
+	Leaver ma_leaver;
+	std::string enter_name;
+
 	std::cout << "Введите имя: ";
-	std::cin >> name;
+	std::cin >> enter_name;
 
-	Leaver leaver;
-
-	leaver.set_name(name);
-
-	std::cout << "До свидания, " << leaver.get_name() << "!" << std::endl;
+	std::cout << ma_leaver.leave(enter_name) << std::endl;
 
 	return 0;
 }
