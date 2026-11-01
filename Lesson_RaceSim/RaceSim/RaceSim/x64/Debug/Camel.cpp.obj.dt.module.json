@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RaceSim\\x64\\Debug\\Camel.obj",
+            "outputs": [
+                "RaceSim\\x64\\Debug\\Camel.cpp.obj.dt.module.json",
+                "RaceSim\\x64\\Debug\\Camel.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

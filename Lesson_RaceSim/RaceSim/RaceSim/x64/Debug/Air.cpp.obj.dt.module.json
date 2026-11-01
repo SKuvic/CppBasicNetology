@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RaceSim\\x64\\Debug\\Air.obj",
+            "outputs": [
+                "RaceSim\\x64\\Debug\\Air.cpp.obj.dt.module.json",
+                "RaceSim\\x64\\Debug\\Air.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
