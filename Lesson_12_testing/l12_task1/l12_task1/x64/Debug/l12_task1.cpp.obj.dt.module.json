@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "l12_task1\\x64\\Debug\\l12_task1.obj",
+            "outputs": [
+                "l12_task1\\x64\\Debug\\l12_task1.cpp.obj.dt.module.json",
+                "l12_task1\\x64\\Debug\\l12_task1.cpp.obj.dt.d.json",
+                "l12_task1\\x64\\Debug\\l12_task1.pch"
+            ],
+            "requires": []
+        }
+    ]
+}
